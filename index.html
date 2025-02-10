@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAdvise - Your Financial Future Starts Here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FinAdvise</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="mode-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Expert Financial Advice for Your Brighter Future</h1>
+            <p>Secure your financial goals with our personalized strategies and cutting-edge tools.</p>
+            <button class="cta-button">Get Started</button>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Investment Planning</h3>
+                    <p>Maximize your returns with our expert investment strategies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Savings & Budgeting</h3>
+                    <p>Learn to save smarter and budget better for your goals.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Mortgage Advice</h3>
+                    <p>Navigate the home-buying process with confidence.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Retirement Planning</h3>
+                    <p>Secure your future with our comprehensive retirement plans.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools">
+            <h2>Financial Tools</h2>
+            <div class="tool-container">
+                <div class="calculator">
+                    <h3>Budget Calculator</h3>
+                    <form id="budget-form">
+                        <label for="income">Monthly Income:</label>
+                        <input type="number" id="income" required>
+                        <label for="expenses">Monthly Expenses:</label>
+                        <input type="number" id="expenses" required>
+                        <button type="submit">Calculate</button>
+                    </form>
+                    <div id="budget-result"></div>
+                </div>
+                <div class="calculator">
+                    <h3>Loan Calculator</h3>
+                    <form id="loan-form">
+                        <label for="loan-amount">Loan Amount:</label>
+                        <input type="number" id="loan-amount" required>
+                        <label for="interest-rate">Interest Rate (%):</label>
+                        <input type="number" id="interest-rate" step="0.1" required>
+                        <label for="loan-term">Loan Term (years):</label>
+                        <input type="number" id="loan-term" required>
+                        <button type="submit">Calculate</button>
+                    </form>
+                    <div id="loan-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="market-data" class="market-data">
+            <h2>Live Market Data</h2>
+            <div id="stock-container"></div>
+        </section>
+
+        <section id="blog" class="blog">
+            <h2>Financial Insights</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="img3.jpg" alt="Blog post image">
+                    <h3>5 Tips for Smart Investing</h3>
+                    <p>Learn the secrets of successful investors and grow your wealth.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="blog-card">
+                    <img src="img1.jpg" alt="Blog post image">
+                    <h3>Understanding Market Trends</h3>
+                    <p>Stay ahead of the curve with our market analysis.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="blog-card">
+                    <img src="img2.jpg" alt="Blog post image">
+                    <h3>Retirement Planning 101</h3>
+                    <p>Ensure a comfortable retirement with these essential tips.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FinAdvise</h3>
+                <p>Your trusted partner for financial success.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FinAdvise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
